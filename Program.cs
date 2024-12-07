@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleAppConsolelivress;
+using System;
 
 namespace AppConsoleLivres
 {
@@ -6,7 +7,13 @@ namespace AppConsoleLivres
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Bienvenue dans l'application de gestion des livres!");
+            Revue revue1 = new Revue("Boreal study", "OussamaNajem", 40, 101, 2022);
+            Revue revue2 = new Revue("Boreal lib", "OussamaNajem", 50, 102, 2023);
+            Revue revue3 = new Revue("Boreal IT", "OussamaNajem", 45, 103, 2024);
+
+            revue1.AfficherDetails();
+            revue2.AfficherDetails();
+            revue3.AfficherDetails();
         }
     }
 }
